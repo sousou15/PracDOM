@@ -1,0 +1,36 @@
+body{
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+h1{
+    font-size: 80px;
+    margin-left: 30%;
+    color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1:hover{
+    transform: scale(1.3);
+    margin-left: 36%;
+    transition: 2s;
+    text-shadow: 4px 2px 2px rgb(54, 23, 110);
+}
+a{
+    font-size: 25px;
+    color: cadetblue;
+    display: inline-block;
+    margin-right: 10px;
+}
+a:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+ul{
+    margin-left: 40%;
+}
+p{
+    font-size: 40px;
+    margin-left: 36%;
+    margin-top: 70px;
+    color:cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
