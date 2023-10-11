@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        button{
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            margin-left:40% ;
+            margin-top: 5%;
+            position: static;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: aqua;
+            color: rgb(17, 43, 66);
+        }
+        button:hover{
+            background-color: rgb(242, 255, 0);
+            color: rgb(255, 132, 0);
+            transform: scale(1.3);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <button value="boton1" onclick="cambiarfondo()">BOTÓN 1</button>
+    <button value="boton2" onclick="cambiarfondo1()">BOTÓN 2</button>
+    <button value="boton3" onclick="cambiarfondo2()">BOTÓN 3</button>
+    <button value="boton4" onclick="cambiarfondo3()">BOTÓN 4</button>
+    <button value="boton5" onclick="cambiarfondo4()">BOTÓN 5</button>
+
+    <script>
+
+        function cambiarfondo(){
+            document.body.style.backgroundColor="red";
+        }
+        function cambiarfondo1(){
+            document.body.style.backgroundColor="green";
+        }
+        function cambiarfondo2(){
+            document.body.style.backgroundColor="blue";
+        }
+        function cambiarfondo3(){
+            document.body.style.backgroundColor="purple";
+        }
+        function cambiarfondo4(){
+            document.body.style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>
