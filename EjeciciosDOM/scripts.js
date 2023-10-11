@@ -172,6 +172,101 @@ window.onload = function () {
 
 
 
+}
 
+function moverderecha() {
+    const foto = document.getElementById("foto");
+    const valoresreal = window.getComputedStyle(foto);
+    const fotomargin = parseInt(valoresreal.getPropertyValue("margin-left").replace("px", ""));
+    const limiteDerecho = window.innerWidth - foto.offsetWidth;
+
+    if (fotomargin < limiteDerecho) {
+        foto.style.marginLeft = (fotomargin + 5) + "px";
+    }
+}
+
+function moverizq() {
+    const foto = document.getElementById("foto");
+    const valoresreal = window.getComputedStyle(foto);
+    const fotomargin = parseInt(valoresreal.getPropertyValue("margin-left").replace("px", ""));
+
+    if (fotomargin >= 5) {
+        foto.style.marginLeft = (fotomargin - 5) + "px";
+    }
+}
+
+function reset() {
+    const foto = document.getElementById("foto");
+    foto.style.marginLeft = "800px";
 
 }
+
+function cambiarparrafoej9() {
+
+    const parrafo1 = document.querySelector("p");
+    const parrafo2 = document.querySelector("pre");
+
+
+    if (parrafo1.textContent == "Este es un párrafo con la clase uno.") {
+        var texto = parrafo1.textContent;
+        parrafo1.textContent = parrafo2.textContent;
+        parrafo2.textContent = texto;
+
+        parrafo1.style.backgroundColor = " #00c3ff";
+        parrafo1.style.border = "2px solid #333333";
+        parrafo1.style.width = "200px";
+        parrafo1.style.color = " #940404";
+        parrafo1.style.fontSize = "8px";
+        parrafo1.style.fontFamily="'Courier New', Courier, monospace";
+
+        parrafo2.style.backgroundColor = " #ffcc00";
+        parrafo2.style.border = "2px solid #333";
+        parrafo2.style.width = "400px";
+        parrafo2.style.color = "  #333";
+        parrafo2.style.fontSize = "18px";
+        parrafo2.style.fontFamily="'Courier New', Courier, monospace";
+
+    } else {
+
+        var texto = parrafo1.textContent;
+        parrafo1.textContent = parrafo2.textContent;
+        parrafo2.textContent = texto;
+
+        parrafo2.style.backgroundColor = " #00c3ff";
+        parrafo2.style.border = "2px solid #333333";
+        parrafo2.style.width = "200px";
+        parrafo2.style.color = " #940404";
+        parrafo2.style.fontSize = "8px";
+        parrafo2.style.fontFamily="'Courier New', Courier, monospace";
+
+        parrafo1.style.backgroundColor = " #ffcc00";
+        parrafo1.style.border = "2px solid #333";
+        parrafo1.style.width = "400px";
+        parrafo1.style.color = "  #333";
+        parrafo1.style.fontSize = "18px";
+        parrafo1.style.fontFamily="'Courier New', Courier, monospace";
+
+    }
+
+}
+
+function estilo() {
+    const parrafo1 = document.querySelector("p");
+    const parrafo2 = document.querySelector("pre");
+
+    parrafo2.style.backgroundColor = " #00c3ff";
+    parrafo2.style.border = "2px solid #333333";
+    parrafo2.style.width = "200px";
+    parrafo2.style.color = " #940404";
+    parrafo2.style.fontSize = "8px";
+    parrafo2.style.fontFamily="'Courier New', Courier, monospace";
+
+    parrafo1.style.backgroundColor = " #ffcc00";
+    parrafo1.style.border = "2px solid #333";
+    parrafo1.style.width = "400px";
+    parrafo1.style.color = "  #333";
+    parrafo1.style.fontSize = "18px";
+    parrafo1.style.fontFamily="'Courier New', Courier, monospace";
+
+}
+
