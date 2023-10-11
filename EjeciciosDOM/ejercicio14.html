@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function mostrarSubMenu(id) {
+            const submenus = document.querySelectorAll('.submenu'); //Agrupa todos los submenus
+            submenus.forEach(submenu => {               //Recorre todos los submenus
+                submenu.style.display = 'none';         //Los oculta todos
+            });
+            
+            const submenu = document.getElementById(id);   //Accedemos al elemento actual mediante el parámetro Id.
+            submenu.style.display = 'block';                //Mostramos el submenu actual (el del parámetro, ver sentencia anterior) 
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            <button class="menu-trigger" onclick="mostrarSubMenu('submenu1')">Inicio</button>
+            <ul id="submenu1" class="submenu">
+                <li>Portada</li>
+                <li>Acerca de mi</li>
+                <li>Mis fotos</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <button class="menu-trigger" onclick="mostrarSubMenu('submenu2')">Proyectos</button>
+            <ul id="submenu2" class="submenu">
+                <li>Web Apps</li>
+                <li>Mobile Apps</li>
+                <li>Juegos</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <button class="menu-trigger" onclick="mostrarSubMenu('submenu3')">Portfolio</button>
+            <ul id="submenu3" class="submenu">
+                <li>Páginas webs</li>
+                <li>Software</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <button class="menu-trigger" onclick="mostrarSubMenu('submenu4')">Contacto</button>
+            <ul id="submenu4" class="submenu">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
