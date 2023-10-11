@@ -33,12 +33,17 @@
             document.body.style.backgroundColor="green";
         }
 
+        function cambiarfondoOriginal(){
+            document.body.style.backgroundColor="white";
+        }
+        
+
     </script>    
 </head>
 <body>
-    <div id="div1" class="colored-div" onmouseover="cambiarfondo()"></div>
-    <div id="div2" class="colored-div" onmouseover="cambiarfondo1()"></div>
-    <div id="div3" class="colored-div" onmouseover="cambiarfondo2()"></div>
+    <div id="div1" class="colored-div" onmouseover="cambiarfondo()" onmouseout="cambiarfondoOriginal()"></div>
+    <div id="div2" class="colored-div" onmouseover="cambiarfondo1()" onmouseout="cambiarfondoOriginal()"></div>
+    <div id="div3" class="colored-div" onmouseover="cambiarfondo2()" onmouseout="cambiarfondoOriginal()"></div>
 </body>
 
 </html>
