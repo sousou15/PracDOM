@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <title>EJERCICIO 12</title>
+    <style>
+        BODY{
+            
+            background-image: url(https://static.vecteezy.com/system/resources/previews/008/888/454/original/horizontal-view-of-asphalt-road-elevated-bridge-route-to-cut-through-the-main-road-background-of-trees-and-green-grass-vector.jpg);
+        }
+        #foto{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-position: 50%;
+            background-size: cover;
+            margin-top: 17%;
+            margin-left: 800px;
+            z-index: 999;
+            transition: all 0.1s;
+        }
+
+        button{
+            margin-left: 30%;
+            margin-top: 30%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="foto" onmousemove="moverderecha()" src="Imagenes/tractor.png">
+    </div>
+
+    <button id="reseteo" onclick="reset()">RESETEAR VALORES</button>
+
+
+</body>
+
+</html>
