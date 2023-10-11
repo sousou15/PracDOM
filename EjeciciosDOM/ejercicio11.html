@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 11</title>
+
+    <style>
+        div{
+            text-align: center;
+            margin:auto;
+            font-size: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 100px;
+        }
+        #div1{
+            background-color: aqua;
+            
+        }
+        #div1:hover + #div2{
+                visibility: visible;
+        }
+        #div2{
+            background-color: rgb(247, 0, 255);
+            visibility: hidden;
+        }
+        #div3{
+            background-color: rgb(255, 123, 0);
+        }
+        #div4{
+            background-color: aqua;
+            
+        }
+        #div4:hover + #div5{
+                display: block;
+        }
+        #div5{
+            background-color: rgb(247, 0, 255);
+            display: none;
+        }
+        #div6{
+            background-color: rgb(255, 123, 0);
+        }
+
+    </style>
+
+</head>
+<body>
+    <hr>VISIBILITY<hr>
+    <div id="div1">Soy el div 1</div>
+    <div id="div2">Soy el div 2</div>
+    <div id="div3">Soy el div 3</div>
+    <hr>DISPLAY<hr>
+    <div id="div4">Soy el div 1</div>
+    <div id="div5">Soy el div 2</div>
+    <div id="div6">Soy el div 3</div>
+</body>
+</html>
