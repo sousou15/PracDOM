@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .colored-div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        #div1 {
+            background-color: blue; /* Azul */
+        }
+
+        #div2 {
+            background-color: red; /* Rojo */
+        }
+
+        #div3 {
+            background-color: green; /* Verde */
+        }
+    </style>
+    <script>
+
+        function cambiarfondo(){
+            document.body.style.backgroundColor="blue";
+        }
+        function cambiarfondo1(){
+            document.body.style.backgroundColor="red";
+        }
+        function cambiarfondo2(){
+            document.body.style.backgroundColor="green";
+        }
+
+    </script>    
+</head>
+<body>
+    <div id="div1" class="colored-div" onmouseover="cambiarfondo()"></div>
+    <div id="div2" class="colored-div" onmouseover="cambiarfondo1()"></div>
+    <div id="div3" class="colored-div" onmouseover="cambiarfondo2()"></div>
+</body>
+
+</html>
