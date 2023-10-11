@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let intervalId1;
+        let intervalId2;
+        let cargando1 = false;
+        let cargando2 = false;
+
+        function cargarBarra1() {
+            if(cargando1){
+                return;
+            }
+            const progressBar = document.getElementById('progress1');
+            let valor = 0;
+            progressBar.value = valor;
+            cargando1 = true;
+
+            intervalId1 = setInterval(function () {
+                valor++;
+                progressBar.value = valor;
+
+                if (valor >= 100) {
+                    clearInterval(intervalId1);
+                    alert('Carga completada para Barra 1');
+                    cargando1 = false;
+                }
+            }, 100);
+        }
+
+        function cargarBarra2() {
+            if(cargando2){
+                return;
+            }
+            const progressBar = document.getElementById('progress2');
+            let valor = 0;
+            progressBar.value = valor;
+            cargando2 = true;
+
+            intervalId2 = setInterval(function () {
+                valor++;
+                progressBar.value = valor;
+
+                if (valor >= 100) {
+                    clearInterval(intervalId2);
+                    alert('Carga completada para Barra 2');
+                    cargando2=false
+                }
+            }, 100);
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <label for="progress1">Barra 1</label>
+        <progress id="progress1" max="100" value="0"></progress>
+        <button onclick="cargarBarra1()">Cargar Barra 1</button>
+    </div>
+    <div>
+        <label for="progress2">Barra 2</label>
+        <meter id="progress2" max="100" value="0"></meter>
+        <button onclick="cargarBarra2()">Cargar Barra 2</button>
+    </div>
+</body>
+</html>
